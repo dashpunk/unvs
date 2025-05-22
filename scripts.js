@@ -15503,8 +15503,8 @@ function applyTranslationToElements(elements, lang) {
       description: 'The world\'s largest financial market with trillions in daily volume, 24-hour operations, and decentralized transparency.',
       contentTitle: 'Global Currency Exchange',
       contentDescription: 'The Foreign Exchange Market (Forex) is where currencies are traded 24 hours a day, five days a week. With over $6 trillion in daily trading volume, it\'s the largest and most liquid market in the world. Our advanced algorithms identify optimal entry and exit points across major, minor, and exotic currency pairs.',
-      image: '/images/forex-charts.png',
-      link: '/forex-trading.html',
+      image: './images/forex-charts.png',
+      link: './forex-trading.html',
       i18n: {
         subtitle: 'forex_subtitle',
         title: 'forex_title',
@@ -15517,8 +15517,8 @@ function applyTranslationToElements(elements, lang) {
       description: 'Innovative decentralized markets offering autonomy, low-cost transfers, and portfolio diversification opportunities.',
       contentTitle: 'The Future of Financial Innovation',
       contentDescription: 'Cryptocurrencies operate on distributed networks independent of central authorities, providing greater autonomy and security in transactions. Our sophisticated strategies navigate this dynamic market for sustainable value creation.',
-      image: '/images/crypto-coins.png',
-      link: '/cryptocurrency.html',
+      image: './images/crypto-coins.png',
+      link: './cryptocurrency.html',
       i18n: {
         subtitle: 'crypto_subtitle',
         title: 'crypto_title',
