@@ -15541,7 +15541,7 @@ function initGlobalPresence() {
     const title = globalPresenceSection.querySelector('.subtitle-gold')
     const heading = globalPresenceSection.querySelector('.heading')
 
-    const mapScale = 0.1
+    const mapScale = 1
     const mapOpacity = 0.7 + (scrollY / 3000)
     map.style.transform = `scale(${mapScale})`
     map.style.opacity = mapOpacity
