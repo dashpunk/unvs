@@ -15471,7 +15471,7 @@ function initMarketsSection() {
 
 function applyTranslationToElements(elements, lang) {
   // Carrega o arquivo de traduções atual
-  fetch(`/locales/${lang}.json`)
+  fetch(`./locales/${lang}.json`)
     .then(response => response.json())
     .then(translations => {
       elements.forEach(element => {
@@ -25664,7 +25664,7 @@ function loadLanguage(lang) {
     }
 
     // Tentar carregar o arquivo de idioma
-    fetch(`/locales/${lang}.json`)
+    fetch(`./locales/${lang}.json`)
         .then(response => {
             if (!response.ok) {
                 throw new Error(`Falha ao carregar o idioma: ${lang} (Status: ${response.status})`);
