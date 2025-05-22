@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0a1a36">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="msapplication-navbutton-color" content="#0a1a36">
+
+  <title>UNVS - Universal Value System</title>
+
+  <!-- Carregamento de fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+    rel="stylesheet">
+
+  <!-- Importação de ícones -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Importação de estilos -->
+  <link rel="stylesheet" href="./styles.css">
+
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script defer src="scripts.js"></script><link href="styles.css" rel="stylesheet"></head>
+
+<body>
+  <header class="header">
+    <div class="top-bar py-2 border-bottom">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="d-flex align-items-center gap-2">
+            <i class="bi bi-instagram small"></i>
+            <span class="text-secondary-emphasis small" data-i18n="Followers">100K Followers</span>
+          </div>
+          <div class="dropdown">
+            <button class="btn btn-link dropdown-toggle text-secondary-emphasis small text-decoration-none py-0"
+              type="button" data-bs-toggle="dropdown">
+              <span class="fi fi-us me-1" style="width: 20px; height: 14px;"></span>
+              English
+              <i class="bi bi-chevron-down small"></i>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#" data-lang="en">
+                  <span class="fi fi-us me-2" style="width: 20px; height: 14px;"></span>English</a>
+              </li>
+              <li><a class="dropdown-item" href="#" data-lang="pt-br">
+                  <span class="fi fi-br me-2" style="width: 20px; height: 14px;"></span>Portuguese</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg border-bottom pb-2">
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <img src="/images/logo.png" alt="Logo" height="53">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse fullscreen-menu" id="navbarNav">
+          <div class="fullscreen-menu-content">
+            <ul class="navbar-nav m-auto">
+              <li class="nav-item"><a class="nav-link" data-i18n="menu_home" href="/">Home</a></li>
+              <li class="nav-item"><a class="nav-link" data-i18n="menu_about" href="#about">About</a></li>
+              <li class="nav-item"><a class="nav-link" data-i18n="menu_solutions" href="#solutions">Solutions</a></li>
+              <li class="nav-item"><a class="nav-link" data-i18n="menu_technology" href="#technology">Technology</a></li>
+              <li class="nav-item"><a class="nav-link" data-i18n="menu_performance" href="#performance">Performance</a></li>
+              <li class="nav-item"><a class="nav-link" data-i18n="menu_contact" href="#contact">Contact</a></li>
+            </ul>
+            <button href="login" class="btn btn-dark rounded-pill px-4 mb-2" data-i18n="menu_login">Login</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section py-5 py-md-6 overflow-hidden bg-white" data-animation="container">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Coluna Esquerda -->
+          <div class="col-lg-6">
+            <span class="hero-badge text-gray-900 px-4 py-2 rounded-pill d-inline-block" data-animation="item" data-i18n="universal_value_system">
+              Universal Value System
+            </span>
+
+            <h1 class="hero-title mb-4" data-animation="item">
+              <span class="text-gold" data-i18n="hero_title_1">Financial Excellence</span>
+              <br>
+              <span class="text-dark-blue" data-i18n="hero_title_2">Worldwide Strategy</span>
+            </h1>
+
+            <p class="hero-subtitle text-gray mb-4" data-i18n="hero_subtitle" data-animation="item">
+              High-performance solutions for Forex and Cryptocurrencies with advanced technology and consistent results
+            </p>
+
+            <p class="countries text-gold mb-4" data-i18n="countries" data-animation="item">
+              Operating in 4 countries
+            </p>
+
+            <a href="#solutions" class="btn btn-primary rounded-pill d-inline-flex align-items-center gap-2"
+              data-animation="item" data-i18n="discovery_solutions">
+              Discovery our Solutions
+              <span class="bi-arrow-right-short-wrapper">
+                <i class="bi bi-arrow-right-short"></i>
+              </span>
+            </a>
+
+            <div class="social-links d-flex mt-5" data-animation="item">
+              <!-- <a href="#" class="social-link">
+                <i class="bi bi-facebook"></i>
+                <span class="d-none d-sm-inline ms-2">Facebook</span>
+              </a> -->
+              <a href="https://www.instagram.com/unvs.world" target="_blank" class="social-link">
+                <i class="bi bi-instagram"></i>
+                <span class="d-none d-sm-inline ms-2">Instagram</span>
+              </a>
+              <!-- <a href="#" class="social-link">
+                <i class="bi bi-twitter"></i>
+                <span class="d-none d-sm-inline ms-2">Twitter</span>
+              </a> -->
+            </div>
+          </div>
+
+          <!-- Coluna Direita -->
+          <div class="col-lg-6 position-relative">
+            <div class="hero-image-wrapper">
+              <img src="/images/trading-screen.png" alt="Trading Screen" class="img-fluid shadow-lg"
+                data-animation="image">
+
+              <!-- Círculo decorativo -->
+              <div class="hero-circle" data-animation="circle"></div>
+
+              <!-- Card de Estatísticas -->
+              <div class="stats-card" data-animation="statsCard">
+                <div class="d-flex align-items-center gap-2">
+                  <div class="icon-wrapper rounded-circle p-2">
+                    <i class="bi bi-emoji-smile"></i>
+                  </div>
+                  <div>
+                    <div class="stats-value">+36.5%</div>
+                    <div class="stats-label" data-i18n="stats_performance">Performance Q1 2025</div>
+                  </div>
+                </div>
+
+                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="85" aria-valuemin="0"
+                  aria-valuemax="100">
+                  <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 85%"></div>
+                </div>
+              </div>
+
+              <!-- Card de Contato -->
+              <a href="https://wa.me/5599981176655" target="_blank" class="call-card d-flex align-items-center" data-animation="callCard">
+                <div class="icon-wrapper rounded-circle p-2">
+                  <i class="bi bi-whatsapp"></i>
+                </div>
+                <div>
+                  <div class="call-label" data-i18n="call_now">Call Now</div>
+                  <div class="call-number">+55 99 98117-6655</div>
+                </div>
+              </a>
+
+              <div class="hero-circle-blue" data-animation="circle"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section">
+      <div class="container">
+        <div class="about-content">
+          <!-- Coluna da Imagem -->
+          <div class="image-column">
+            <div class="image-wrapper">
+              <img src="/images/meeting-room.png" alt="Modern Meeting Room">
+              <div class="image-overlay"></div>
+            </div>
+          </div>
+
+          <!-- Coluna de Conteúdo -->
+          <div class="content-column" id="about">
+            <p class="subtitle-gold" data-i18n="about_unvs">About UNVS</p>
+            <h2 class="title" data-i18n="universal_value_system">Universal Value System</h2>
+            <p class="description" data-i18n="about_description">
+              A specialized group delivering high-performance strategies in Forex and Cryptocurrency markets through
+              advanced technology and risk management.
+            </p>
+
+            <div class="features">
+              <!-- Feature 1 -->
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <i class="bi bi-globe"></i>
+                </div>
+                <div class="feature-content">
+                  <h3 data-i18n="universal_title">Universal</h3>
+                  <p data-i18n="universal_description">Universal represents globally accepted financial principles and practices. Our strategies work across
+                    markets and borders, bringing institutional-grade solutions to everyone.</p>
+                </div>
+              </div>
+
+              <!-- Feature 2 -->
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <i class="bi bi-graph-up"></i>
+                </div>
+                <div class="feature-content">
+                  <h3 data-i18n="value_title">Value</h3>
+                  <p data-i18n="value_description">Value embodies trust, transparency, and responsibility in financial markets. We create sustainable
+                    growth through ethical practices and reliable systems.</p>
+                </div>
+              </div>
+
+              <!-- Feature 3 -->
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <i class="bi bi-gear-fill"></i>
+                </div>
+                <div class="feature-content">
+                  <h3 data-i18n="system_title">System</h3>
+                  <p data-i18n="system_description">System is our architecture of advanced rules, processes, and technologies that ensure efficiency,
+                    security, and consistent performance in all market conditions.</p>
+                </div>
+              </div>
+            </div>
+
+            <a href="/about.html" class="btn btn-primary rounded-pill d-inline-flex align-items-center gap-2" data-i18n="learn_more">
+              Learn More
+              <span class="bi-arrow-right-short-wrapper">
+                <i class="bi bi-arrow-right-short"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Markets Section -->
+    <section class="markets-section" id="solutions">
+      <div class="container m-auto">
+        <div class="text-center">
+          <p class="subtitle-gold animate-on-scroll" data-i18n="solutions">Solutions</p>
+          <h2 class="title animate-on-scroll" data-i18n="our_markets">Our Markets</h2>
+        </div>
+      </div>
+      <div class="container">
+        <div class="markets-container">
+          <!-- Left Column - Market Selection -->
+          <div class="markets-list">
+            <div class="market-item" data-market="forex">
+              <div class="market-content">
+                <div class="market-header">
+                  <div class="icon-wrapper inactive">
+                    <i class="bi bi-graph-up"></i>
+                  </div>
+                  <div class="market-info">
+                    <h3 data-i18n="forex_market">Forex Market</h3>
+                    <p class="inactive" data-i18n="home_forex_description">The world's largest financial market with trillions in daily volume, 24-hour
+                      operations, and decentralized transparency.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="market-item" data-market="crypto">
+              <div class="market-content">
+                <div class="market-header">
+                  <div class="icon-wrapper inactive">
+                    <i class="bi bi-currency-bitcoin"></i>
+                  </div>
+                  <div class="market-info">
+                    <h3 data-i18n="crypto_market">Cryptocurrency Market</h3>
+                    <p class="inactive" data-i18n="home_crypto_description">Innovative decentralized markets offering autonomy, low-cost transfers, and
+                      portfolio diversification opportunities.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column - Content Display -->
+          <div class="markets-content">
+            <div class="content-wrapper">
+              <div class="dots-pattern">
+                <img src="/images/dots-pattern.svg" alt="Dots Pattern">
+              </div>
+
+              <div class="market-details">
+                <div class="content-grid">
+                  <div class="text-content">
+                    <p class="market-subtitle" data-i18n="crypto_subtitle">Cryptocurrency Market</p>
+                    <h3 class="title" data-i18n="home_crypto_title">The Future of Financial Innovation</h3>
+                    <p class="market-description" data-i18n="crypto_detailed">Cryptocurrencies operate on distributed networks independent of
+                      central authorities, providing greater autonomy and security in transactions. Our sophisticated
+                      strategies navigate this dynamic market for sustainable value creation.</p>
+                    <div class="market-link">
+                      <a href="/cryptocurrency.html" class="btn-market">
+                        <span data-i18n="view_more">View More</span>
+                        <span>
+                          <span class="arrow-icon">
+                            <i class="bi bi-arrow-right"></i>
+                          </span>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="image-content">
+                    <img src="/images/crypto-coins.png" alt="Cryptocurrency" class="market-image">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+      <!-- <div class="col-12 d-flex flex-row justify-content-center align-items-center">
+        <a href="/markets" class="btn btn-primary rounded-pill px-4 py-3" data-i18n="explore_markets">
+          Explore Our Markets
+        </a>
+      </div> -->
+    </section>
+
+    <!-- Technology Carousel Section -->
+    <section class="technology" id="technology">
+      <div class="container">
+        <div class="subtitle-gold" data-i18n="technology_section">
+          Technology
+        </div>
+        <h2 class="title" data-i18n="tech_title">Strategic Technologies for <br> Market Excellence</h2>
+      </div>
+      <div class="technology-container">
+        <div class="swiper technology-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="active">
+                <div class="icon-wrapper">
+                  <i class="bi bi-bar-chart"></i>
+                </div>
+                <h3 data-i18n="analytics_title">Advanced Analytics</h3>
+                <p data-i18n="analytics_description">Leverage big data analytics and machine learning to identify patterns and opportunities across global
+                  markets with unprecedented accuracy.</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <div class="icon-wrapper">
+                  <i class="bi bi-robot"></i>
+                </div>
+                <h3 data-i18n="automated_title">Automated Trading</h3>
+                <p data-i18n="automated_description">Execute trades with precision using our Expert Advisors (EAs) that analyze markets and execute
+                  operations based on programmed algorithms and technical analysis.</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <div class="icon-wrapper">
+                  <i class="bi bi-display"></i>
+                </div>
+                <h3 data-i18n="proprietary_title">Proprietary Trading Desk</h3>
+                <p data-i18n="proprietary_description">Groups or institutions trading with their own capital, training traders to generate profits through
+                  consistent strategies in the exchange market.</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <div class="icon-wrapper">
+                  <i class="bi bi-arrow-repeat"></i>
+                </div>
+                <h3 data-i18n="home_arbitrage_title">Triangular Arbitrage</h3>
+                <p data-i18n="home_arbitrage_description">Involves three currency pairs within the same exchange. Example: BTC/ETH → ETH/USDT → USDT/BTC,
+                  generating profit from temporary price distortions.</p>
+              </div>
+            </div>
+            <!-- Slides duplicados para loop infinito -->
+            <div class="swiper-slide">
+              <div>
+                <div class="icon-wrapper">
+                  <i class="bi bi-bar-chart"></i>
+                </div>
+                <h3 data-i18n="analytics_title">Advanced Analytics</h3>
+                <p data-i18n="analytics_description">Leverage big data analytics and machine learning to identify patterns and opportunities across global
+                  markets with unprecedented accuracy.</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <div class="icon-wrapper">
+                  <i class="bi bi-robot"></i>
+                </div>
+                <h3 data-i18n="automated_title">Automated Trading</h3>
+                <p data-i18n="automated_description">Execute trades with precision using our Expert Advisors (EAs) that analyze markets and execute
+                  operations based on programmed algorithms and technical analysis.</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <div class="icon-wrapper">
+                  <i class="bi bi-display"></i>
+                </div>
+                <h3 data-i18n="proprietary_title">Proprietary Trading Desk</h3>
+                <p data-i18n="proprietary_description">Groups or institutions trading with their own capital, training traders to generate profits through
+                  consistent strategies in the exchange market.</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <div class="icon-wrapper">
+                  <i class="bi bi-arrow-repeat"></i>
+                </div>
+                <h3 data-i18n="home_arbitrage_title">Triangular Arbitrage</h3>
+                <p data-i18n="home_arbitrage_description">Involves three currency pairs within the same exchange. Example: BTC/ETH → ETH/USDT → USDT/BTC,
+                  generating profit from temporary price distortions.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 d-flex flex-row justify-content-center align-items-center gap-3 mb-4">
+          <div class="button-next">
+            <i class="bi bi-chevron-left"></i>
+          </div>
+          <div class="button-prev">
+            <i class="bi bi-chevron-right"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Global Presence Section -->
+    <section class="global-presence" id="global-presence">
+      <div class="container">
+        <div class="md-grid-cols-2">
+          <!-- Left Column - Map Image -->
+          <div class="map">
+            <img src="/images/global-map.png" alt="Global Map" class="img-fluid">
+          </div>
+
+          <!-- Right Column - Content -->
+          <div class="content">
+            <p class="subtitle-gold mt-4 mt-lg-0" data-i18n="global_presence">Our Global Presence</p>
+            <h2 class="heading" data-i18n="global_title">Strategic Operations<br>Worldwide</h2>
+
+            <div class="internal-cards">
+              <div class="elipse">
+                <img src="/images/global-presence-elipse.svg" alt="Elipse">
+              </div>
+              <div class="card">
+                <div class="card-title" data-i18n="us_title">United States</div>
+                <div class="card-description" data-i18n="us_description">Our institutional headquarters, where we develop capital raising
+                  strategies, investor relations, and regulatory compliance.</div>
+              </div>
+              <div class="card">
+                <div class="card-title" data-i18n="brazil_title">Brazil</div>
+                <div class="card-description" data-i18n="brazil_description">One of Latin America's most promising markets, representing our hub for
+                  popular expansion with strong crypto market adoption.</div>
+              </div>
+              <div class="card">
+                <div class="card-title" data-i18n="portugal_title">Portugal</div>
+                <div class="card-description" data-i18n="portugal_description">Our gateway to the European Union, enabling easier operation within the
+                  European bloc with established legal structure.</div>
+              </div>
+              <div class="card">
+                <div class="card-title" data-i18n="canada_title">Canada</div>
+                <div class="card-description" data-i18n="canada_description">Strategic innovation center where we concentrate our development team,
+                  R&D, and integration with new platforms.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Performance Section -->
+    <section class="performance-section" id="performance">
+      <div class="container">
+        <div class="md-grid-cols-2">
+          <div>
+            <p class="subtitle-gold" data-animation="item" data-i18n="performance">Performance</p>
+            <h2 class="title mb-4" data-animation="item" data-i18n="performance_title">
+              Delivering Consistent Returns<br>with Transparency and Precision
+            </h2>
+            <p class="description text-gray mb-4" data-animation="item" data-i18n="performance_description">
+              Our mission is to provide unparalleled performance in financial markets through advanced technology,
+              strategic expertise, and exceptional risk management.
+            </p>
+            <div class="features-list mb-5" data-animation="container">
+              <div class="feature-item" data-animation="item">
+                <div class="feature-icon"><i class="bi bi-check2"></i></div>
+                <p data-i18n="feature_1">Strong track record of consistent performance across market conditions</p>
+              </div>
+              <div class="feature-item" data-animation="item">
+                <div class="feature-icon"><i class="bi bi-check2"></i></div>
+                <p>Transparent operations with real-time monitoring of investments</p>
+              </div data-i18n="feature_2">
+              <div class="feature-item" data-animation="item">
+                <div class="feature-icon"><i class="bi bi-check2"></i></div>
+                <p data-i18n="feature_3">Sophisticated technology backed by experienced financial professionals</p>
+              </div>
+              <div class="feature-item" data-animation="item">
+                <div class="feature-icon"><i class="bi bi-check2"></i></div>
+                <p data-i18n="feature_4">Accessible entry point with institutional-grade solutions</p>
+              </div>
+            </div>
+
+            <!-- <a href="/performance" class="btn btn-primary rounded-pill px-4 py-3"
+              data-animation="item" data-i18n="learn_more">
+              Learn More
+              <span class="bi-arrow-right-short-wrapper">
+                <i class="bi bi-arrow-right-short"></i>
+              </span>
+            </a> -->
+          </div>
+          
+          <div>
+            <div class="row g-4">
+              <!-- Card de Retornos -->
+              <div class="col-md-6">
+                <div class="performance-card" data-animation="item">
+                  <div class="card-icon"><i class="bi bi-bar-chart-fill"></i></div>
+                  <h3 data-i18n="q1_returns">Q1 2025 <br>Returns</h3>
+                  <div class="returns-grid" id="returnsGrid">
+                    <div>
+                      <div class="month" data-i18n="january">January</div>
+                      <div class="value" id="januaryValue">0%</div>
+                    </div>
+                    <div>
+                      <div class="month" data-i18n="february">February</div>
+                      <div class="value" id="februaryValue">0%</div>
+                    </div>
+                    <div>
+                      <div class="month" data-i18n="march">March</div>
+                      <div class="value" id="marchValue">0%</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Card de Investimento Mínimo -->
+              <div class="col-md-6">
+                <div class="performance-card" data-animation="item">
+                  <div class="card-icon"><i class="bi bi-currency-dollar"></i></div>
+                  <h3 data-i18n="min_investment">Minimum <br>Investment</h3>
+                  <div class="value-large">$1000</div>
+                </div>
+              </div>
+              <!-- Card de Taxa de Saque -->
+              <div class="col-md-6">
+                <div class="performance-card" data-animation="item">
+                  <div class="card-icon"><i class="bi bi-percent"></i></div>
+                  <h3 data-i18n="withdrawal_fee">Withdrawal <br>Fee</h3>
+                  <div class="value-large">5%</div>
+                </div>
+              </div>
+              <!-- Card de Saques Mensais -->
+              <div class="col-md-6">
+                <div class="performance-card" data-animation="item">
+                  <div class="card-icon"><i class="bi bi-calendar-check"></i></div>
+                  <h3 data-i18n="monthly_withdrawals">Monthly <br>Withdrawals</h3>
+                  <div class="value-large">2x</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Leadership Team Section -->
+    <section class="leadership-team-section bg-white overflow-hidden" id="contact">
+      <div class="container">
+        <div class="text-center mb-5">
+          <p class="mb-2 subtitle-gold" data-i18n="leadership">Leadership Team</p>
+          <h2 class="title mb-4" data-i18n="leadership_title">
+            Behind Our Financial Excellence Is<br>an Elite Leadership Team
+          </h2>
+        </div>
+
+        <div class="team-grid">
+          <!-- Card 1 -->
+          <div class="team-card">
+            <div class="team-card__image-container">
+              <img src="/images/executive-1.png" alt="Felipe Carvalho" class="team-card__image">
+              <div class="team-card__overlay"></div>
+              <div class="team-card__social">
+                <a href="#" class="team-card__social-icon">
+                  <i class="bi bi-facebook"></i>
+                </a>
+                <a href="#" class="team-card__social-icon">
+                  <i class="bi bi-twitter"></i>
+                </a>
+                <a href="#" class="team-card__social-icon">
+                  <i class="bi bi-linkedin"></i>
+                </a>
+                <a href="#" class="team-card__social-icon">
+                  <i class="bi bi-instagram"></i>
+                </a>
+              </div>
+            </div>
+            <div class="team-card__content">
+              <div class="team-card__info">
+                <h3 class="team-card__name">Felipe Carvalho</h3>
+                <p class="team-card__role" data-i18n="cfo">Chief Financial Officer</p>
+              </div>
+              <a href="#" class="team-card__link">
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer text-white pb-5">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Useful Links -->
+        <div class="col-md-6 col-lg-3 footer-section">
+          <h3 class="h5 mb-4" data-i18n="useful_links">Useful Links</h3>
+          <ul class="list-unstyled">
+            <li class="footer-link"><a href="/" class="hover-white" data-i18n="home">Home</a></li>
+            <li class="footer-link"><a href="/index.html#about" data-i18n="about_us">About Us</a></li>
+            <li class="footer-link"><a href="/index.html#solutions" data-i18n="solutions">Solutions</a></li>
+            <li class="footer-link"><a href="/index.html#technology" data-i18n="technology">Technology</a></li>
+            <li class="footer-link"><a href="/index.html#performance" data-i18n="performance">Performance</a></li>
+            <li class="footer-link"><a href="/index.html#contact" data-i18n="contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Our Company -->
+        <div class="col-md-6 col-lg-3 footer-section">
+          <h3 class="h5 mb-4" data-i18n="our_company">Our Company</h3>
+          <ul class="list-unstyled">
+            <li class="footer-link"><a href="/terms-conditions.html" data-i18n="terms">Terms & Conditions</a></li>
+            <li class="footer-link"><a href="/privacy-policy.html" data-i18n="privacy">Privacy Policy</a></li>
+            <li class="footer-link"><a href="/#global-presence" data-i18n="international">International Operations</a></li>
+          </ul>
+        </div>
+
+        <!-- Our Solution -->
+        <div class="col-md-6 col-lg-3 footer-section">
+          <h3 class="h5 mb-4" data-i18n="our_solution">Our Solution</h3>
+          <ul class="list-unstyled">
+            <li class="footer-link"><a href="/forex-trading.html" data-i18n="forex_trading">Forex Trading</a></li>
+            <li class="footer-link"><a href="/cryptocurrency.html" data-i18n="cryptocurrency">Cryptocurrency</a></li>
+            <li class="footer-link"><a href="/arbitrage-strategy.html" data-i18n="arbitrage_strategy">Arbitrage Strategy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-6 col-lg-3 footer-section">
+          <h3 class="h5 mb-4" data-i18n="get_contact">Get Contact</h3>
+
+            <!-- Get Contact -->
+            <div class="mb-4">
+              <h4 class="h6 mb-2 text-uppercase" style="color: #d4af37;">Universal Value System LLC</h4>
+              <address class="mb-0" style="font-style: normal; line-height: 1.6;">
+                <div class="mb-1">16192 Coastal Hwy</div>
+                <div class="mb-1">Lewes, DE 19958</div>
+                <div class="mb-1">Delaware, USA</div>
+                <div class="mt-2">
+                  <i class="bi bi-telephone me-2"></i>
+                  <a href="tel:+13026457400" class="text-decoration-none" style="color: inherit;">
+                    +1 (302) 645-7400
+                  </a>
+                </div>
+              </address>
+            </div>
+          <div class="d-flex gap-3">
+            <!-- <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"
+              class="social-icon rounded-circle d-flex align-items-center justify-content-center text-white text-decoration-none">
+              <i class="bi bi-facebook"></i>
+            </a> -->
+            <a href="https://www.instagram.com/unvs.world" target="_blank" rel="noopener noreferrer"
+              class="social-icon rounded-circle d-flex align-items-center justify-content-center text-white text-decoration-none">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <!-- <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"
+              class="social-icon rounded-circle d-flex align-items-center justify-content-center text-white text-decoration-none">
+              <i class="bi bi-twitter"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+              class="social-icon rounded-circle d-flex align-items-center justify-content-center text-white text-decoration-none">
+              <i class="bi bi-linkedin"></i>
+            </a> -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="terms-border mt-5">
+        <div class="container py-5">
+          <div class="row align-items-center terms-and-conditions">
+            <div class="col-md-6 mb-3 mb-md-0 p-0">
+              <div class="d-flex gap-4">
+                <a href="/terms-conditions.html" class="footer-link" data-i18n="terms">Terms &
+                  Conditions</a>
+                <a href="/privacy-policy" class="footer-link" data-i18n="privacy">Privacy Policy</a>
+                <a href="https://wa.me/5599981176655" class="footer-link" data-i18n="contact">Contact Us</a>
+              </div>
+            </div>
+            <div class="col-md-6 text-md-end  p-0">
+              <p class="small mb-0 footer-link" data-i18n="all_rights">All Rights Reserved UNVS 2025</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- /Footer -->
+
+  <!-- Button Whatsapp float -->
+  <a href="https://wa.me/5599981176655" target="_blank" class="whatsapp-float">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+  <!-- AOS JS 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/main.js"></script>-->
+</body>
+
+</html>

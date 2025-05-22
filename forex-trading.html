@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0a1a36">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="msapplication-navbutton-color" content="#0a1a36">
+
+  <title>UNVS - Universal Value System</title>
+
+  <!-- Carregamento de fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+    rel="stylesheet">
+
+  <!-- Importação de ícones -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Importação de estilos -->
+  <link rel="stylesheet" href="./styles.css">
+
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script defer src="scripts.js"></script><link href="styles.css" rel="stylesheet"></head>
+
+<body>
+  <header class="header">
+    <div class="top-bar py-2 border-bottom">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="d-flex align-items-center gap-2">
+            <i class="bi bi-instagram small"></i>
+            <span class="text-secondary-emphasis small" data-i18n="Followers">100K Followers</span>
+          </div>
+          <div class="dropdown">
+            <button class="btn btn-link dropdown-toggle text-secondary-emphasis small text-decoration-none py-0"
+              type="button" data-bs-toggle="dropdown">
+              <span class="fi fi-us me-1" style="width: 20px; height: 14px;"></span>
+              English
+              <i class="bi bi-chevron-down small"></i>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#" data-lang="en">
+                  <span class="fi fi-us me-2" style="width: 20px; height: 14px;"></span>English</a>
+              </li>
+              <li><a class="dropdown-item" href="#" data-lang="pt-br">
+                  <span class="fi fi-br me-2" style="width: 20px; height: 14px;"></span>Portuguese</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg border-bottom pb-2">
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <img src="/images/logo.png" alt="Logo" height="53">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse fullscreen-menu" id="navbarNav">
+          <div class="fullscreen-menu-content">
+            <ul class="navbar-nav m-auto">
+              <li class="nav-item"><a class="nav-link" data-i18n="menu_home" href="/">Home</a></li>
+              <li class="nav-item"><a class="nav-link" data-i18n="menu_about" href="/about">About</a></li>
+              <li class="nav-item"><a class="nav-link" data-i18n="menu_solutions" href="/#solutions">Solutions</a></li>
+              <li class="nav-item"><a class="nav-link" data-i18n="menu_technology" href="/#technology">Technology</a></li>
+              <li class="nav-item"><a class="nav-link" data-i18n="menu_performance" href="/#performance">Performance</a></li>
+              <li class="nav-item"><a class="nav-link" data-i18n="menu_contact" href="/#contact">Contact</a></li>
+            </ul>
+            <button href="login" class="btn btn-dark rounded-pill px-4 mb-2" data-i18n="menu_login">Login</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="page-hero py-5 py-md-6 overflow-hidden bg-white">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-12 text-center">
+            <h1 class="title mb-4">
+              <span class="text-gold" data-i18n="forex_title">Forex</span>
+              <span class="text-dark-blue" data-i18n="trading_title">Trading</span>
+            </h1>
+            <p class="hero-subtitle text-gray mb-4 mx-auto" style="max-width: 700px;" data-i18n="forex_description">
+              Access the world's largest financial market with UNVS sophisticated trading strategies, advanced technology, and professional risk management in forex operations.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Forex Section -->
+    <section class="about-section">
+      <div class="container">
+        <div class="about-content">
+          <div class="image-column">
+            <div class="position-relative">
+              <img src="/images/forex-market.jpg" alt="Forex Market" class="img-fluid rounded shadow">
+              <div class="story-accent-circle"></div>
+            </div>
+          </div>
+          <div class="content-column">
+            <p class="subtitle-gold" data-i18n="market_advantage">Market Advantage</p>
+            <h2 class="title" data-i18n="why_forex_title">Why Choose Forex Trading?</h2>
+            <p class="description" data-i18n="global_market_description">
+              <strong data-i18n="global_market_label">Largest global financial market:</strong> <span data-i18n="global_market_content">Forex moves trillions of dollars daily, providing high liquidity and continuous trading opportunities.</span>
+            </p>
+            <p class="description" data-i18n="operation_24h_description">
+              <strong data-i18n="operation_24h_label">24-hour operation:</strong> <span data-i18n="operation_24h_content">Functions uninterrupted during business days, allowing flexibility and agility in operations.</span>
+            </p>
+            <p class="description" data-i18n="decentralization_description">
+              <strong data-i18n="decentralization_label">Decentralization:</strong> <span data-i18n="decentralization_content">Offers access and resistance to manipulation. Being decentralized, the Forex market offers greater transparency and is less susceptible to manipulation by individual entities.</span>
+            </p>
+
+            <h3 class="mt-5 mb-3 text-dark-blue" data-i18n="market_characteristics_title">Market Characteristics</h3>
+            <p class="description" data-i18n="market_characteristics_content">
+              The foreign exchange market is characterized by its immense size, with over $7.5 trillion traded daily across major financial centers worldwide. This massive volume ensures exceptional liquidity, allowing traders to enter and exit positions with minimal slippage and competitive spreads.
+            </p>
+
+            <h3 class="mt-5 mb-3 text-dark-blue" data-i18n="trading_opportunities_title">Trading Opportunities</h3>
+            <p class="description" data-i18n="trading_opportunities_content">
+              Forex trading offers unique opportunities through currency pair volatility, economic events, and geopolitical developments. Our sophisticated algorithms identify patterns and trends across major, minor, and exotic currency pairs, maximizing profit potential while managing risk exposure.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- UNVS Forex Solutions Section -->
+    <section class="about-section bg-light">
+      <div class="container">
+        <div class="about-content">
+          <div class="content-column">
+            <p class="subtitle-gold" data-i18n="unvs_solutions">UNVS Solutions</p>
+            <h2 class="title" data-i18n="advanced_strategies_title">Advanced Forex Strategies</h2>
+            <p class="description" data-i18n="advanced_strategies_description">
+              UNVS employs cutting-edge algorithmic trading systems designed specifically for forex markets. Our proprietary technology analyzes market conditions in real-time, executing trades with precision timing and optimal risk-reward ratios across multiple currency pairs simultaneously.
+            </p>
+
+            <h3 class="mt-5 mb-3 text-dark-blue" data-i18n="algorithmic_trading_title">Algorithmic Trading</h3>
+            <p class="description" data-i18n="algorithmic_trading_content">
+              Our advanced algorithms process thousands of data points per second, including technical indicators, economic releases, sentiment analysis, and correlation patterns. This comprehensive approach enables us to identify high-probability trading opportunities while maintaining strict risk management protocols.
+            </p>
+
+            <h3 class="mt-5 mb-3 text-dark-blue" data-i18n="risk_management_title">Risk Management</h3>
+            <p class="description" data-i18n="risk_management_content">
+              Professional risk management is central to our forex operations. We employ dynamic position sizing, correlation analysis, drawdown controls, and real-time monitoring to protect capital while maximizing growth potential. Our systems automatically adjust exposure based on market volatility and correlation changes.
+            </p>
+
+            <h3 class="mt-5 mb-3 text-dark-blue" data-i18n="currency_pairs_title">Currency Pairs Coverage</h3>
+            <p class="description" data-i18n="currency_pairs_content">
+              We trade across all major currency pairs (EUR/USD, GBP/USD, USD/JPY, USD/CHF), commodity currencies (AUD/USD, NZD/USD, USD/CAD), and selected minor pairs. Our diversified approach spreads risk while capturing opportunities across different economic regions and time zones.
+            </p>
+
+            <h3 class="mt-5 mb-3 text-dark-blue" data-i18n="technology_infrastructure_title">Technology Infrastructure</h3>
+            <p class="description" data-i18n="technology_infrastructure_content">
+              Our forex trading infrastructure includes low-latency execution systems, redundant connectivity to major liquidity providers, and advanced order management systems. This technology ensures optimal trade execution, minimal slippage, and maximum uptime for consistent performance.
+            </p>
+
+          </div>
+          <div class="image-column">
+            <div class="position-relative">
+              <img src="/images/forex-trading-desk.jpg" alt="Forex Trading Desk" class="img-fluid rounded shadow">
+              <div class="story-accent-circle"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Market Analysis Section -->
+    <section class="about-section">
+      <div class="container">
+        <div class="about-content">
+          <div class="image-column">
+            <div class="position-relative">
+              <img src="/images/market-analysis.jpg" alt="Market Analysis" class="img-fluid rounded shadow">
+              <div class="story-accent-circle"></div>
+            </div>
+          </div>
+          <div class="content-column">
+            <p class="subtitle-gold" data-i18n="market_intelligence">Market Intelligence</p>
+            <h2 class="title" data-i18n="comprehensive_analysis_title">Comprehensive Market Analysis</h2>
+            <p class="description" data-i18n="fundamental_analysis_description">
+              Our research team conducts deep fundamental analysis of economic indicators, central bank policies, geopolitical events, and market sentiment. This analysis informs our trading strategies and helps anticipate major currency movements before they occur.
+            </p>
+
+            <h3 class="mt-5 mb-3 text-dark-blue" data-i18n="technical_analysis_title">Technical Analysis</h3>
+            <p class="description" data-i18n="technical_analysis_content">
+              Advanced technical analysis using proprietary indicators, pattern recognition, and multi-timeframe analysis. Our systems identify support/resistance levels, trend continuations, and reversal patterns across all major currency pairs with high accuracy.
+            </p>
+
+            <h3 class="mt-5 mb-3 text-dark-blue" data-i18n="economic_calendar_title">Economic Calendar Integration</h3>
+            <p class="description" data-i18n="economic_calendar_content">
+              Real-time integration with global economic calendars ensures our systems are prepared for high-impact news events. We automatically adjust position sizes and risk parameters around major announcements to protect against adverse volatility while capitalizing on opportunities.
+            </p>
+
+            <h3 class="mt-5 mb-3 text-dark-blue" data-i18n="performance_monitoring_title">Performance Monitoring</h3>
+            <p class="description" data-i18n="performance_monitoring_content">
+              Continuous monitoring of strategy performance with detailed analytics on win rates, average returns, maximum drawdown, and risk-adjusted metrics. This data drives ongoing optimization and ensures consistent improvement in trading outcomes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer text-white pb-5">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Useful Links -->
+        <div class="col-md-6 col-lg-3 footer-section">
+          <h3 class="h5 mb-4" data-i18n="useful_links">Useful Links</h3>
+          <ul class="list-unstyled">
+            <li class="footer-link"><a href="/" class="hover-white" data-i18n="home">Home</a></li>
+            <li class="footer-link"><a href="/index.html#about" data-i18n="about_us">About Us</a></li>
+            <li class="footer-link"><a href="/index.html#solutions" data-i18n="solutions">Solutions</a></li>
+            <li class="footer-link"><a href="/index.html#technology" data-i18n="technology">Technology</a></li>
+            <li class="footer-link"><a href="/index.html#performance" data-i18n="performance">Performance</a></li>
+            <li class="footer-link"><a href="/index.html#contact" data-i18n="contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Our Company -->
+        <div class="col-md-6 col-lg-3 footer-section">
+          <h3 class="h5 mb-4" data-i18n="our_company">Our Company</h3>
+          <ul class="list-unstyled">
+            <li class="footer-link"><a href="/terms-conditions.html" data-i18n="terms">Terms & Conditions</a></li>
+            <li class="footer-link"><a href="/privacy-policy.html" data-i18n="privacy">Privacy Policy</a></li>
+            <li class="footer-link"><a href="/#global-presence" data-i18n="international">International Operations</a></li>
+          </ul>
+        </div>
+
+        <!-- Our Solution -->
+        <div class="col-md-6 col-lg-3 footer-section">
+          <h3 class="h5 mb-4" data-i18n="our_solution">Our Solution</h3>
+          <ul class="list-unstyled">
+            <li class="footer-link"><a href="/forex-trading.html" data-i18n="forex_trading">Forex Trading</a></li>
+            <li class="footer-link"><a href="/cryptocurrency.html" data-i18n="cryptocurrency">Cryptocurrency</a></li>
+            <li class="footer-link"><a href="/arbitrage-strategy.html" data-i18n="arbitrage_strategy">Arbitrage Strategy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-6 col-lg-3 footer-section">
+          <h3 class="h5 mb-4" data-i18n="get_contact">Get Contact</h3>
+
+            <!-- Get Contact -->
+            <div class="mb-4">
+              <h4 class="h6 mb-2 text-uppercase" style="color: #d4af37;">Universal Value System LLC</h4>
+              <address class="mb-0" style="font-style: normal; line-height: 1.6;">
+                <div class="mb-1">16192 Coastal Hwy</div>
+                <div class="mb-1">Lewes, DE 19958</div>
+                <div class="mb-1">Delaware, USA</div>
+                <div class="mt-2">
+                  <i class="bi bi-telephone me-2"></i>
+                  <a href="tel:+13026457400" class="text-decoration-none" style="color: inherit;">
+                    +1 (302) 645-7400
+                  </a>
+                </div>
+              </address>
+            </div>
+          <div class="d-flex gap-3">
+            <!-- <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"
+              class="social-icon rounded-circle d-flex align-items-center justify-content-center text-white text-decoration-none">
+              <i class="bi bi-facebook"></i>
+            </a> -->
+            <a href="https://www.instagram.com/unvs.world" target="_blank" rel="noopener noreferrer"
+              class="social-icon rounded-circle d-flex align-items-center justify-content-center text-white text-decoration-none">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <!-- <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"
+              class="social-icon rounded-circle d-flex align-items-center justify-content-center text-white text-decoration-none">
+              <i class="bi bi-twitter"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+              class="social-icon rounded-circle d-flex align-items-center justify-content-center text-white text-decoration-none">
+              <i class="bi bi-linkedin"></i>
+            </a> -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="terms-border mt-5">
+        <div class="container py-5">
+          <div class="row align-items-center terms-and-conditions">
+            <div class="col-md-6 mb-3 mb-md-0 p-0">
+              <div class="d-flex gap-4">
+                <a href="/terms-conditions.html" class="footer-link" data-i18n="terms">Terms &
+                  Conditions</a>
+                <a href="/privacy-policy" class="footer-link" data-i18n="privacy">Privacy Policy</a>
+                <a href="https://wa.me/5599981176655" class="footer-link" data-i18n="contact">Contact Us</a>
+              </div>
+            </div>
+            <div class="col-md-6 text-md-end  p-0">
+              <p class="small mb-0 footer-link" data-i18n="all_rights">All Rights Reserved UNVS 2025</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- /Footer -->
+
+  <!-- Button Whatsapp float -->
+  <a href="https://wa.me/5599981176655" target="_blank" class="whatsapp-float">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+  <!-- AOS JS 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/main.js"></script>-->
+</body>
+
+</html>

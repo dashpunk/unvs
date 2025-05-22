@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0a1a36">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="msapplication-navbutton-color" content="#0a1a36">
+
+  <title>UNVS - Universal Value System</title>
+
+  <!-- Carregamento de fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+    rel="stylesheet">
+
+  <!-- Importação de ícones -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Importação de estilos -->
+  <link rel="stylesheet" href="./styles.css">
+
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script defer src="scripts.js"></script><link href="styles.css" rel="stylesheet"></head>
+
+<body>
+  <header class="header">
+    <div class="top-bar py-2 border-bottom">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="d-flex align-items-center gap-2">
+            <i class="bi bi-instagram small"></i>
+            <span class="text-secondary-emphasis small" data-i18n="Followers">100K Followers</span>
+          </div>
+          <div class="dropdown">
+            <button class="btn btn-link dropdown-toggle text-secondary-emphasis small text-decoration-none py-0"
+              type="button" data-bs-toggle="dropdown">
+              <span class="fi fi-us me-1" style="width: 20px; height: 14px;"></span>
+              English
+              <i class="bi bi-chevron-down small"></i>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#" data-lang="en">
+                  <span class="fi fi-us me-2" style="width: 20px; height: 14px;"></span>English</a>
+              </li>
+              <li class="dropdown-item" href="#" data-lang="pt-br">
+                  <span class="fi fi-br me-2" style="width: 20px; height: 14px;"></span>Portuguese</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg border-bottom pb-2">
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <img src="/images/logo.png" alt="Logo" height="53">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse fullscreen-menu" id="navbarNav">
+          <div class="fullscreen-menu-content">
+            <ul class="navbar-nav m-auto">
+              <li class="nav-item"><a class="nav-link" data-i18n="menu_home" href="/">Home</a></li>
+              <li class="nav-item"><a class="nav-link" data-i18n="menu_about" href="/about">About</a></li>
+              <li class="nav-item"><a class="nav-link" data-i18n="menu_solutions" href="/#solutions">Solutions</a></li>
+              <li class="nav-item"><a class="nav-link" data-i18n="menu_technology" href="/#technology">Technology</a></li>
+              <li class="nav-item"><a class="nav-link" data-i18n="menu_performance" href="/#performance">Performance</a></li>
+              <li class="nav-item"><a class="nav-link" data-i18n="menu_contact" href="/#contact">Contact</a></li>
+            </ul>
+            <button href="login" class="btn btn-dark rounded-pill px-4 mb-2" data-i18n="menu_login">Login</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="page-hero py-5 py-md-6 overflow-hidden bg-white">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-12 text-center">
+            <h1 class="title mb-4">
+              <span class="text-gold" data-i18n="arbitrage_title">Arbitrage</span>
+              <span class="text-dark-blue" data-i18n="strategy_title">Strategy</span>
+            </h1>
+            <p class="hero-subtitle text-gray mb-4 mx-auto" style="max-width: 700px;" data-i18n="arbitrage_description">
+              Capitalize on price discrepancies across global markets with UNVS sophisticated arbitrage strategies, automated execution systems, and risk-free profit generation techniques.
+            </p>
+            <p class="text-muted small" data-i18n="arbitrage_efficiency">Market efficiency optimization through systematic arbitrage</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What is Arbitrage Section -->
+    <section class="about-section">
+      <div class="container">
+        <div class="about-content">
+          <div class="image-column">
+            <div class="position-relative">
+              <img src="/images/arbitrage-markets.jpg" alt="Arbitrage Markets" class="img-fluid rounded shadow">
+              <div class="story-accent-circle"></div>
+            </div>
+          </div>
+          <div class="content-column">
+            <p class="subtitle-gold" data-i18n="market_inefficiency">Market Inefficiency</p>
+            <h2 class="title" data-i18n="what_arbitrage_title">What is Arbitrage Strategy?</h2>
+            <p class="description" data-i18n="arbitrage_definition_description">
+              <strong data-i18n="arbitrage_definition_label">Risk-free profit generation:</strong> <span data-i18n="arbitrage_definition_content">Arbitrage exploits price differences for the same asset across different markets, exchanges, or time periods, generating profits with minimal market risk exposure.</span>
+            </p>
+            <p class="description" data-i18n="simultaneous_trading_description">
+              <strong data-i18n="simultaneous_trading_label">Simultaneous trading:</strong> <span data-i18n="simultaneous_trading_content">Execute buy and sell orders simultaneously across different venues to capture price spreads while maintaining market-neutral positions.</span>
+            </p>
+            <p class="description" data-i18n="market_efficiency_description">
+              <strong data-i18n="market_efficiency_label">Market efficiency contribution:</strong> <span data-i18n="market_efficiency_content">Arbitrage activities help eliminate price discrepancies, contributing to overall market efficiency and price discovery across global financial markets.</span>
+            </p>
+            <p class="description" data-i18n="technology_dependent_description">
+              <strong data-i18n="technology_dependent_label">Technology-dependent:</strong> <span data-i18n="technology_dependent_content">Success requires advanced technology, fast execution systems, and sophisticated algorithms to identify and capitalize on fleeting arbitrage opportunities.</span>
+            </p>
+
+            <h3 class="mt-5 mb-3 text-dark-blue" data-i18n="arbitrage_types_title">Types of Arbitrage</h3>
+            <p class="description" data-i18n="arbitrage_types_content">
+              UNVS employs multiple arbitrage strategies including spatial arbitrage (price differences across exchanges), temporal arbitrage (price changes over time), triangular arbitrage (currency cross-rates), and statistical arbitrage (mean reversion patterns).
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- UNVS Arbitrage Solutions Section -->
+    <section class="about-section bg-light">
+      <div class="container">
+        <div class="about-content">
+          <div class="content-column">
+            <p class="subtitle-gold" data-i18n="unvs_arbitrage_solutions">UNVS Arbitrage Solutions</p>
+            <h2 class="title" data-i18n="systematic_arbitrage_title">Systematic Arbitrage Execution</h2>
+            <p class="description" data-i18n="systematic_arbitrage_description">
+              UNVS has developed proprietary arbitrage systems that continuously scan global markets for price discrepancies across forex, cryptocurrency, and traditional asset classes. Our high-frequency trading infrastructure ensures optimal execution speed and minimal slippage in arbitrage operations.
+            </p>
+
+            <h3 class="mt-5 mb-3 text-dark-blue" data-i18n="cross_exchange_title">Cross-Exchange Arbitrage</h3>
+            <p class="description" data-i18n="cross_exchange_content">
+              Real-time monitoring of price differences across multiple exchanges and trading venues. Our systems automatically execute trades when spreads exceed minimum thresholds, accounting for transaction costs, fees, and execution risks to ensure profitable operations.
+            </p>
+
+            <h3 class="mt-5 mb-3 text-dark-blue" data-i18n="currency_arbitrage_title">Currency Arbitrage</h3>
+            <p class="description" data-i18n="currency_arbitrage_content">
+              Advanced triangular and cross-currency arbitrage strategies that exploit rate discrepancies in forex markets. Our algorithms continuously monitor currency crosses and forward rates to identify profitable arbitrage chains across major and minor currency pairs.
+            </p>
+
+            <h3 class="mt-5 mb-3 text-dark-blue" data-i18n="statistical_arbitrage_title">Statistical Arbitrage</h3>
+            <p class="description" data-i18n="statistical_arbitrage_content">
+              Quantitative strategies that identify temporary price divergences from historical relationships between correlated assets. Using advanced statistical models and machine learning, we predict mean reversion patterns and execute market-neutral trades.
+            </p>
+
+            <h3 class="mt-5 mb-3 text-dark-blue" data-i18n="risk_management_arbitrage_title">Risk Management</h3>
+            <p class="description" data-i18n="risk_management_arbitrage_content">
+              While arbitrage is considered low-risk, we implement comprehensive risk controls including execution risk monitoring, counterparty risk assessment, liquidity analysis, and real-time position tracking to ensure capital protection and consistent profitability.
+            </p>
+
+          </div>
+          <div class="image-column">
+            <div class="position-relative">
+              <img src="/images/trading-algorithms.jpg" alt="Trading Algorithms" class="img-fluid rounded shadow">
+              <div class="story-accent-circle"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technology & Execution Section -->
+    <section class="about-section">
+      <div class="container">
+        <div class="about-content">
+          <div class="image-column">
+            <div class="position-relative">
+              <img src="/images/high-frequency-trading.jpg" alt="High Frequency Trading" class="img-fluid rounded shadow">
+              <div class="story-accent-circle"></div>
+            </div>
+          </div>
+          <div class="content-column">
+            <p class="subtitle-gold" data-i18n="execution_technology">Execution Technology</p>
+            <h2 class="title" data-i18n="advanced_execution_title">Advanced Execution Systems</h2>
+            <p class="description" data-i18n="latency_optimization_description">
+              Our arbitrage infrastructure is built for ultra-low latency execution with co-located servers, direct market access, and optimized network connections. This technological edge is essential for successful arbitrage in today's competitive electronic markets.
+            </p>
+
+            <h3 class="mt-5 mb-3 text-dark-blue" data-i18n="real_time_monitoring_title">Real-Time Monitoring</h3>
+            <p class="description" data-i18n="real_time_monitoring_content">
+              Continuous scanning of thousands of price feeds across global markets, exchanges, and trading venues. Our monitoring systems process millions of data points per second to identify arbitrage opportunities the moment they appear in the market.
+            </p>
+
+            <h3 class="mt-5 mb-3 text-dark-blue" data-i18n="automated_execution_title">Automated Execution</h3>
+            <p class="description" data-i18n="automated_execution_content">
+              Fully automated trade execution removes human delays and emotions from arbitrage operations. Our systems automatically calculate optimal position sizes, execute simultaneous trades, and manage risk parameters without manual intervention.
+            </p>
+
+            <h3 class="mt-5 mb-3 text-dark-blue" data-i18n="liquidity_management_title">Liquidity Management</h3>
+            <p class="description" data-i18n="liquidity_management_content">
+              Sophisticated liquidity analysis ensures sufficient market depth for large arbitrage trades. We maintain relationships with multiple liquidity providers and employ smart order routing to optimize execution across fragmented markets.
+            </p>
+
+            <h3 class="mt-5 mb-3 text-dark-blue" data-i18n="performance_analytics_title">Performance Analytics</h3>
+            <p class="description" data-i18n="performance_analytics_content">
+              Detailed performance tracking and analytics provide insights into arbitrage efficiency, profitability metrics, and strategy optimization opportunities. This data-driven approach enables continuous improvement and adaptation to changing market conditions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer text-white pb-5">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Useful Links -->
+        <div class="col-md-6 col-lg-3 footer-section">
+          <h3 class="h5 mb-4" data-i18n="useful_links">Useful Links</h3>
+          <ul class="list-unstyled">
+            <li class="footer-link"><a href="/" class="hover-white" data-i18n="home">Home</a></li>
+            <li class="footer-link"><a href="/index.html#about" data-i18n="about_us">About Us</a></li>
+            <li class="footer-link"><a href="/index.html#solutions" data-i18n="solutions">Solutions</a></li>
+            <li class="footer-link"><a href="/index.html#technology" data-i18n="technology">Technology</a></li>
+            <li class="footer-link"><a href="/index.html#performance" data-i18n="performance">Performance</a></li>
+            <li class="footer-link"><a href="/index.html#contact" data-i18n="contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Our Company -->
+        <div class="col-md-6 col-lg-3 footer-section">
+          <h3 class="h5 mb-4" data-i18n="our_company">Our Company</h3>
+          <ul class="list-unstyled">
+            <li class="footer-link"><a href="/terms-conditions.html" data-i18n="terms">Terms & Conditions</a></li>
+            <li class="footer-link"><a href="/privacy-policy.html" data-i18n="privacy">Privacy Policy</a></li>
+            <li class="footer-link"><a href="/#global-presence" data-i18n="international">International Operations</a></li>
+          </ul>
+        </div>
+
+        <!-- Our Solution -->
+        <div class="col-md-6 col-lg-3 footer-section">
+          <h3 class="h5 mb-4" data-i18n="our_solution">Our Solution</h3>
+          <ul class="list-unstyled">
+            <li class="footer-link"><a href="/forex-trading.html" data-i18n="forex_trading">Forex Trading</a></li>
+            <li class="footer-link"><a href="/cryptocurrency.html" data-i18n="cryptocurrency">Cryptocurrency</a></li>
+            <li class="footer-link"><a href="/arbitrage-strategy.html" data-i18n="arbitrage_strategy">Arbitrage Strategy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-6 col-lg-3 footer-section">
+          <h3 class="h5 mb-4" data-i18n="get_contact">Get Contact</h3>
+
+            <!-- Get Contact -->
+            <div class="mb-4">
+              <h4 class="h6 mb-2 text-uppercase" style="color: #d4af37;">Universal Value System LLC</h4>
+              <address class="mb-0" style="font-style: normal; line-height: 1.6;">
+                <div class="mb-1">16192 Coastal Hwy</div>
+                <div class="mb-1">Lewes, DE 19958</div>
+                <div class="mb-1">Delaware, USA</div>
+                <div class="mt-2">
+                  <i class="bi bi-telephone me-2"></i>
+                  <a href="tel:+13026457400" class="text-decoration-none" style="color: inherit;">
+                    +1 (302) 645-7400
+                  </a>
+                </div>
+              </address>
+            </div>
+          <div class="d-flex gap-3">
+            <!-- <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"
+              class="social-icon rounded-circle d-flex align-items-center justify-content-center text-white text-decoration-none">
+              <i class="bi bi-facebook"></i>
+            </a> -->
+            <a href="https://www.instagram.com/unvs.world" target="_blank" rel="noopener noreferrer"
+              class="social-icon rounded-circle d-flex align-items-center justify-content-center text-white text-decoration-none">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <!-- <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"
+              class="social-icon rounded-circle d-flex align-items-center justify-content-center text-white text-decoration-none">
+              <i class="bi bi-twitter"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+              class="social-icon rounded-circle d-flex align-items-center justify-content-center text-white text-decoration-none">
+              <i class="bi bi-linkedin"></i>
+            </a> -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="terms-border mt-5">
+        <div class="container py-5">
+          <div class="row align-items-center terms-and-conditions">
+            <div class="col-md-6 mb-3 mb-md-0 p-0">
+              <div class="d-flex gap-4">
+                <a href="/terms-conditions.html" class="footer-link" data-i18n="terms">Terms &
+                  Conditions</a>
+                <a href="/privacy-policy" class="footer-link" data-i18n="privacy">Privacy Policy</a>
+                <a href="https://wa.me/5599981176655" class="footer-link" data-i18n="contact">Contact Us</a>
+              </div>
+            </div>
+            <div class="col-md-6 text-md-end  p-0">
+              <p class="small mb-0 footer-link" data-i18n="all_rights">All Rights Reserved UNVS 2025</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- /Footer -->
+
+  <!-- Button Whatsapp float -->
+  <a href="https://wa.me/5599981176655" target="_blank" class="whatsapp-float">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+  <!-- AOS JS 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/main.js"></script>-->
+</body>
+
+</html>
